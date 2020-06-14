@@ -14,7 +14,7 @@ function getTime() {
   }:${seconds < 10 ? `0${seconds}` : seconds}`;
 }
 
-function getDate() {
+function getDates() {
   const days = date.getDate();
   const months = date.getMonth() + 1;
   const years = date.getFullYear();
@@ -26,7 +26,7 @@ function getDate() {
 function init() {
   getTime();
   setInterval(getTime, 1000);
-  getDate();
+  getDates();
 }
 
 init();
