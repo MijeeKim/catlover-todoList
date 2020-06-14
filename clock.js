@@ -4,8 +4,9 @@ const clockContainer = document.querySelector(".js-clock"),
 const dateContainer = document.querySelector(".js-date"),
   dateTitle = dateContainer.querySelector("h2");
 
-const date = new Date();
+
 function getTime() {
+  const date = new Date();
   const minutes = date.getMinutes();
   const hours = date.getHours();
   const seconds = date.getSeconds();
@@ -15,6 +16,7 @@ function getTime() {
 }
 
 function getDates() {
+  const date = new Date();
   const days = date.getDate();
   const months = date.getMonth() + 1;
   const years = date.getFullYear();
